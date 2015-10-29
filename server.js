@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var errorHandler = require('errorhandler');
 var mysql = require('mysql');
+var router = require('./router');
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -33,6 +34,8 @@ connection.connect(function(err){
     }
     console.log('Connecté à la base de données.');
 });
+
+router(app, connection);
 
 app.listen(app.get('port'), function () {
     console.log('Serveur express en écoute sur le port ' + app.get('port'));

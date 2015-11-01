@@ -1,0 +1,35 @@
+{
+    "name": "twitter",
+    "version": "1.0.0",
+    "description": "Clone de twitter",
+    "main": "server.js",
+    "dependencies": {
+        "express": "*",
+        "jade": "*",
+        "mysql": "*",
+        "body-parser": "*",
+        "errorhandler": "*",
+        "multer": "*"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zyra83/nodeTwitter.git"
+    },
+    "keywords": [
+        "twitter"
+    ],
+    "author": {
+        "name": "Mickaël Benoit",
+        "email": "contact@zyra.fr",
+        "url": "http://zyra.fr/"
+    },
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/zyra83/nodeTwitter/issues"
+    },
+    "homepage": "https://github.com/zyra83/nodeTwitter",
+    "private": true
+}

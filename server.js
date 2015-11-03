@@ -20,6 +20,10 @@ app.use('development', function () {
     });
 });
 
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+
 var connection = mysql.createConnection({
     host: '127.0.0.1',
     user:'root',

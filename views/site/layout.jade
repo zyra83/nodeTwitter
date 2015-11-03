@@ -4,5 +4,23 @@ html(lang='fr')
 		title Twitter Clone
 
 		link(rel='stylesheet', href='/css/bootstrap.css')
+		link(rel='stylesheet', href='/css/style.css')
 	body
-		block content
+		.navbar.navbar-inverse.navbar-fixed-top
+			.container
+				.navbar-header
+					a(href='#').navbar-brand Twitter Clone
+				.navbar-collapse.collapse
+					from.navbar-form.navbar-right
+						.form-group
+							input(type='text', placeholder='Email', name='email').form-control
+						.form-group
+							input(type='password', placeholder='Mot de passe', name='password').form-control
+						button(type='submit').btn.btn-success Authentification
+		.container.content
+			block content
+
+		.container
+			hr
+			footer
+				p Twitter Clone
